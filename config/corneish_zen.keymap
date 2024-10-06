@@ -30,14 +30,14 @@
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | ESC  |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  UP |     |     |     |      |
-// | SHFT |     |     |     |     |BTCLR|   | LFT | DWN | RGT |     |     |      |
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |     |  UP |     |VOLUP|     |      |
+// | SHFT |     |     |     |     |BTCLR|   | LFT | DWN | RGT |VOLDN|     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8    &kp N9    &kp N0 &kp ESC 
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp UP   &trans    &trans    &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &bt BT_CLR     &kp LEFT &kp DOWN &kp RIGHT &trans    &trans &trans
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8    &kp N9    &kp N0 &kp BSPC
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp UP   &trans    &kp C_VOL_UP    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &bt BT_CLR     &kp LEFT &kp DOWN &kp RIGHT &kp C_VOL_DN    &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
